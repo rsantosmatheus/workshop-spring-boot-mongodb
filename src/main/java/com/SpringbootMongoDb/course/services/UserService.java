@@ -46,8 +46,7 @@ public class UserService {
 		newObj.setEmail(obj.getEmail());
 	}
 
-	public User fromDTO(UserDTO objDTO) {
-		return new User(objDTO.getId(), objDTO.getName(), objDTO.getEmail());
-
+	public User fromDTO(UserDTO objDto) {
+		return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
 	}
 }
